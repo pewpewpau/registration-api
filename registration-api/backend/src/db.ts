@@ -1,6 +1,10 @@
 import { Pool } from "pg";
 import dotenv from "dotenv";
-dotenv.config();
+//dotenv.config();
+
+dotenv.config({ path: ".env" });
+
+console.log("DB PASSWORD:", process.env.DB_PASSWORD);
 
 export const pool = new Pool({
   host:     process.env.DB_HOST,

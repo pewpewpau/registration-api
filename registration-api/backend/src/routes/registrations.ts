@@ -17,14 +17,14 @@ router.post("/", async (req: Request, res: Response) => {
     const { rows } = await pool.query(
       `INSERT INTO registrations
         (first_name, last_name, email, phone, date_of_birth,
-         res_street, res_city, res_state, res_postal, res_country,
-         post_street, post_city, post_state, post_postal, post_country)
-       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)
+         res_city, res_street, res_erf, res_country,
+         postal_address, postal_city,  postal_country)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12)
        RETURNING *`,
       [
         p.first_name, p.last_name, p.email, p.phone ?? null, p.date_of_birth ?? null,
-        p.res_street ?? null, p.res_city ?? null, p.res_erf ?? null, p.res_country ?? null,
-        p.postal_address ?? null, p.post_city ?? null, p.post_country ?? null,
+        p.res_city ?? null, p.res_street ?? null, p.res_erf ?? null, p.res_country ?? null,
+        p.postal_address ?? null, p.postal_city ?? null, p.postal_country ?? null,
       ]
     );
     res.status(201).json(rows[0]);

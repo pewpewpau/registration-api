@@ -14,6 +14,6 @@ export interface RegistrationPayload {
 
   // Postal Address
   postal_address?:  string;
-  post_city?:    string;
-  post_country?: string;
+  postal_city?:    string;
+  postal_country?: string;
 }

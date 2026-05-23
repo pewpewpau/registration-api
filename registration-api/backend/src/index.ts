@@ -6,6 +6,8 @@ import registrationRoutes from "./routes/registrations";
 dotenv.config();
 const app = express();
 
+//dotenv.config({ path: process.cwd() + "/.env" });
+
 app.use(cors());
 app.use(express.json());
 
