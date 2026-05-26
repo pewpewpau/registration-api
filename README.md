@@ -170,7 +170,7 @@ PORT=3000
 
 Replace:
 
-* `your_password` with your PostgreSQL password
+* `your_password` with your PostgreSQL password.
 
 ---
 
@@ -192,7 +192,7 @@ If successful, you should see:
 
 # 6. Frontend Setup
 
-Open a new terminal.
+Open a new terminal
 
 Navigate to frontend folder:
 
@@ -312,5 +312,5 @@ Paulus Kashimbode.
 
 # License
 
-This project is for internship assessment purposes.
+This project is for internship assessment purposes. The End
 
