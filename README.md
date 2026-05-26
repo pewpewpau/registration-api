@@ -306,7 +306,7 @@ Check:
 
 # Author
 
-Paulus Kashimbode
+Paulus Kashimbode.
 
 ---
 
